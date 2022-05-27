@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="2007051035_AndreAgung_TugasAplikasi.jnlp">
+  <information>
+    <title>2007051035_AndreAgung_TugasAplikasi</title>
+    <vendor>ANDRE</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="2007051035_AndreAgung_TugasAplikasi.jar" size="7226" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.27.jar" size="2475087" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="2007051035_AndreAgung_TugasAplikasi" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pkg2007051035_andreagung_tugasaplikasi.Main"  name="2007051035_AndreAgung_TugasAplikasi" />
+  <update check="always"/>
+</jnlp>

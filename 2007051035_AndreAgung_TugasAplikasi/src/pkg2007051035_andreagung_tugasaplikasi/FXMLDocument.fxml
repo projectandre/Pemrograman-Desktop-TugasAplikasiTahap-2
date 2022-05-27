@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="1243.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg2007051035_andreagung_tugasaplikasi.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="1241.0" style="-fx-background-color: #570A57;">
+         <children>
+            <VBox layoutX="18.0" layoutY="115.0" prefHeight="278.0" prefWidth="118.0" spacing="23.0">
+               <children>
+                  <Label text="Kode" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nama Pemilik" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Alamat" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Tanggal Pembelian" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Warna" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="182.0" text="Jenis Kamera" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="225.0" text="Harga" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="155.0" layoutY="115.0" prefHeight="214.0" prefWidth="192.0" spacing="19.0">
+               <children>
+                  <TextField id="id" fx:id="id" promptText="Masukkan kode.." />
+                  <TextField id="tfNama" fx:id="tfNama" promptText="Masukkan nama pemilik.." />
+                  <TextField id="tfAlamat" fx:id="tfAlamat" layoutX="10.0" layoutY="85.0" promptText="Masukkan alamat.." />
+                  <DatePicker id="dpTanggalBeli" fx:id="dpTanggalBeli" prefHeight="30.0" prefWidth="197.0" promptText="Pilih Tanggal" />
+                  <HBox prefHeight="27.0" prefWidth="192.0" spacing="30.0">
+                     <children>
+                        <RadioButton id="rdLaki" fx:id="rdHitam" lineSpacing="10.0" mnemonicParsing="false" text="Hitam" textFill="WHITE">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="warnagr" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton id="rdPerempuan" fx:id="rdPutih" lineSpacing="10.0" mnemonicParsing="false" text="Putih" textFill="WHITE" toggleGroup="$warnagr" />
+                     </children>
+                  </HBox>
+                  <TextField id="tfJenis" fx:id="tfJenis" promptText="Masukkan jenis kamera.." />
+                  <TextField id="tfHarga" fx:id="tfHarga" promptText="Masukkan harga.." />
+               </children>
+            </VBox>
+            <TableView fx:id="tvResult" layoutX="391.0" layoutY="51.0" prefHeight="411.0" prefWidth="814.0" style="-fx-background-color: #F1F0C0;">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="79.0" text="Kode" />
+                  <TableColumn fx:id="colNama" prefWidth="128.0" text="Nama Pemilik" />
+                  <TableColumn fx:id="colAlamat" prefWidth="132.0" text="Alamat" />
+                  <TableColumn fx:id="colTanggal" prefWidth="127.0" text="Tanggal Pembelian" />
+                  <TableColumn fx:id="colWarna" prefWidth="106.0" text="Warna" />
+                  <TableColumn fx:id="colJenis" prefWidth="121.0" text="Jenis Kamera" />
+                  <TableColumn fx:id="colHarga" prefWidth="119.0" text="Harga" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnInsert" layoutX="35.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #4E9F3D;" text="Tambah" textFill="WHITE" />
+            <Button fx:id="btnUpdate" layoutX="145.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #D89216;" text="Ubah" textFill="WHITE" />
+            <Button fx:id="btnDelete" layoutX="251.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #FF0000;" text="Hapus" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="77.0" layoutY="34.0" text=" DATA CAMERA" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
